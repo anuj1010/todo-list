@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  padding:0px;
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_container{
+  box-sizing: border-box;
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  background-color: rgb(65, 201, 65);
+}
+.list_container{
+background-color: white;
+text-align: center;
+margin:auto;
+width: 350px;
+height: 580px;
+border-radius: 6px;
+overflow: hidden;
+ 
+}
+.list_items{
+  overflow: auto;
+  height: 420px;
+  margin:5px;
+}
+.header{
+  margin: 15px;
+  
+}
+ul{
+  list-style: none;
+  float:left;
+  margin: auto 10px;
+}
+li{
+   margin: 10px auto;
+   display: flex;
+   align-items: center;
+  
+}
+.heading{
+  margin:10px 0px 15px 0px;
+}
+.input{
+  background-color: white;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+.delet_icon{
+  color:rgb(133, 183, 224);
+  border-radius: 50%;
+  padding:4px;
+  margin: 0 8px;
+  position: relative;
+  
+}
+.delet_icon:hover{
+  background-color: rgb(205, 235, 212);
+  transform: scale(1.2);
+  cursor: pointer;
+  color:red;
 }
