@@ -64,3 +64,11 @@ li{
   cursor: pointer;
   color:red;
 }
+
+@media (max-width: 365px){
+  .list_container{
+    width: 320px;
+    height: 480px;
+    box-sizing: border-box;
+  }
+}
