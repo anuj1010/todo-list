@@ -65,14 +65,14 @@ li{
   color:red;
 }
 
-@media (max-width: 365px){
+@media (max-width: 480px){
   .list_container{
-    width: 320px;
-    height: 480px;
+    width: 310px;
+    height: 500px;
     box-sizing: border-box;
   }
   .list_items{
-    height: 370px;
+    height: 350px;
   }
 
 }
