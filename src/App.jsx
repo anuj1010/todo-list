@@ -34,6 +34,11 @@ const App = ()=>{
  const  deletItem = (id)=>{  
    setArr([...arr, id]);
 };
+
+const clearList=()=>{
+  setListItems('');
+  localStorage.clear();
+}
   return(<>
     <div className="main_container">
       <div className="list_container">
@@ -52,6 +57,13 @@ const App = ()=>{
           })}
          </ul>
         </div>
+
+        <Button variant="outlined" style={{
+          color:"red",
+          padding:"3px",
+          margin:'auto 5px'
+        }} onClick={clearList}>Clear List</Button>
+
       </div>
     </div>
   </>);

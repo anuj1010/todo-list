@@ -23,7 +23,7 @@ overflow: hidden;
 }
 .list_items{
   overflow: auto;
-  height: 420px;
+  height: 400px;
   margin:5px;
 }
 .header{
@@ -72,7 +72,7 @@ li{
     box-sizing: border-box;
   }
   .list_items{
-    height: 350px;
+    height: 320px;
   }
 
 }
