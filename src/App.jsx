@@ -6,7 +6,7 @@ import ReplayIcon from '@mui/icons-material/Replay';
 
 const App = ()=>{
   const [listItems, setListItems] = useState([]); 
-  const [ items, setItems] = useState();
+  const [ items, setItems] = useState('');
   const [arr, setArr] = useState([]);
 
   useEffect(()=>{
