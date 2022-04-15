@@ -36,8 +36,8 @@ const App = ()=>{
 };
 
 const clearList=()=>{
-  setListItems('');
   localStorage.clear();
+  setListItems([]);
 }
   return(<>
     <div className="main_container">
@@ -63,6 +63,7 @@ const clearList=()=>{
           padding:"3px",
           margin:'auto 5px'
         }} onClick={clearList}>Clear List</Button>
+      
 
       </div>
     </div>
