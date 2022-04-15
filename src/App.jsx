@@ -2,10 +2,11 @@ import React, {useEffect, useState} from "react";
 import Button from '@mui/material/Button';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
+import ReplayIcon from '@mui/icons-material/Replay';
 
 const App = ()=>{
   const [listItems, setListItems] = useState([]); 
-  const [ items, setItems] = useState();
+  const [ items, setItems] = useState('');
   const [arr, setArr] = useState([]);
 
   useEffect(()=>{
@@ -34,10 +35,9 @@ const App = ()=>{
  const  deletItem = (id)=>{  
    setArr([...arr, id]);
 };
-
 const clearList=()=>{
-  setListItems('');
-  localStorage.clear();
+  setListItems([]);
+  setArr([]);
 }
   return(<>
     <div className="main_container">
@@ -53,7 +53,7 @@ const clearList=()=>{
         <div className="list_items">
           <ul>
           { listItems.map((val, index)=>{
-            return(<li key={index} style={{textDecoration: arr.includes(index)?'line-through':'none'}}><DeleteIcon className="delet_icon" onClick = {()=>deletItem(index)} />{val}</li>);
+            return(<li key={index} style={{textDecoration: arr.includes(index)?'line-through':'none'}}><DeleteIcon className="delet_icon" onClick = {()=>deletItem(index)} />{val} </li>);
           })}
          </ul>
         </div>
@@ -63,6 +63,7 @@ const clearList=()=>{
           padding:"3px",
           margin:'auto 5px'
         }} onClick={clearList}>Clear List</Button>
+      
 
       </div>
     </div>

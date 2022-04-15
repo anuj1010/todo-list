@@ -64,6 +64,11 @@ li{
   cursor: pointer;
   color:red;
 }
+.replayIcon{
+  position: relative;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
 @media (max-width: 480px){
   .list_container{
